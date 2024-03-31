@@ -1,0 +1,9 @@
+
+
+npm i react-router-dom -S //installs the latest version of the react dom
+
+However this tutorial is a bit older and the version followed is 5
+
+so to install that, run this command in the terminal window:-
+
+        npm install react-router-dom@5
