@@ -1,11 +1,12 @@
 This commit shows the difference between the path and exact path
 
-Try changing the routes
 
-http://localhost:5173/
-http://localhost:5173/post
+Now Try changing the routes
 
-The page renders only home. To get rid of this behaviour use the attribute exact in front of the path.
+http://localhost:5173/ -> renders home
+http://localhost:5173/post -> renders post
+http://localhost:5173/post/ -> renders post
+http://localhost:5173/post/1 ->renders postpage
+http://localhost:5173/about -> render about page
 
-The routes are like water fall. It goes to the route with the first matched character (in this case '/' only). 
-That is the reason why it always renders the 'Home'
+The required page renders properly.

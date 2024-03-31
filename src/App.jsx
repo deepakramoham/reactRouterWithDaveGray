@@ -15,16 +15,16 @@ function App() {
       <Header />
       <Nav />
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/post">
+        <Route exact path="/post">
           <NewPost />
         </Route>
-        <Route path="/post/:id">
+        <Route exact path="/post/:id">
           <PostPage />
         </Route>
-        <Route path="/about" component={About} />
+        <Route exact path="/about" component={About} />
         <Route path="*" component={Missing} />
       </Switch>
       <Footer />
