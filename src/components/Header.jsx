@@ -1,7 +1,8 @@
-
-const Header=()=>{
-
-  return<h1>Header</h1>
-
-}
+const Header = ({ title }) => {
+  return (
+    <header className="Header">
+      <h1>{title}</h1>
+    </header>
+  );
+};
 export default Header;
