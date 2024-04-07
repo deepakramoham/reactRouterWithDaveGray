@@ -1,0 +1,11 @@
+Rules:
+  Only call Hooks at the Top level. Don't call hooks inside loops conditions or nested Functions
+
+  Only call Hooks from react fuction components. Call hooks from custom hooks.
+
+  Cannot call custom hooks from existing inbuilt hooks and from regular javaScript functions either
+
+  Collection of Custom Hooks:- 
+  https://nikgraf.github.io/react-hooks/
+  https://www.npmjs.com/package/react-use
+  
