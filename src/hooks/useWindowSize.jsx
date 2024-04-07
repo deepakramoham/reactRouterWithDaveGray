@@ -15,11 +15,11 @@ const useWindowSize = () => {
     }
     handleResize();
     window.addEventListener("resize",handleResize);
-    const cleanUp=()=>{
-      console.log('runs if a useEffect dependency changes');
-      window.removeEventListener("resize",handleResize);
-    }
-    return cleanUp;
+  
+      
+ 
+    return ()=>window.removeEventListener("resize",handleResize); //CleanUp function refactored.
+    // if there is return inside a useEffect then it must be noted that it is a cleanUp function.
   },[])
   return windowSize;
 }
