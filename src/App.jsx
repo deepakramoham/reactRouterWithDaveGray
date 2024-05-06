@@ -13,8 +13,9 @@ import { DataProvider } from "./context/DataContext";
 function App() {
   return (
     <div className="App">
-      <DataProvider>
+      
         <Header title="React JS Blog" />
+        <DataProvider>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -24,8 +25,9 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route path="*" component={Missing} />
         </Switch>
+        </DataProvider>
         <Footer />
-      </DataProvider>
+      
     </div>
   );
 }
